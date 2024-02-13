@@ -13,35 +13,36 @@ body {
 
 .container {
   background-color: #fff;
-  border-radius: 12px;
+  border-radius: 25px;
   padding: 20px;
   border: 1px solid #ccc;
   width: 300px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 .form-group-container {
   display: flex;
-  justify-content: space-around;
+  gap: 20px;
 }
 
 .form-group {
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .form-group label {
   font-size: 1.3em;
   font-weight: bold;
+  color: #333;
 }
 
 .form-group input {
   padding: 10px;
   border-radius: 12px;
-  border: 1px solid #333;
   font-size: 1.3em;
-  width: 50px;
-  text-align: center;
-
+  width: 117px;
 }
 
 .output {
@@ -49,11 +50,12 @@ body {
   font-size: 3em;
   text-align: center;
   font-weight: bold;
+  animation: animation 3s;
 }
 
 .generate-btn {
   padding: 10px;
-  font-size: 16px;
+  font-size: 1.3em;
   cursor: pointer;
   background-color: #007bff;
   color: #fff;
@@ -65,4 +67,10 @@ body {
 
 .generate-btn:hover {
   background-color: #0056b3;
+}
+
+@keyframes animation {
+  50% {
+    color: blue;
+  }
 }
