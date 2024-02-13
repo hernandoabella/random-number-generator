@@ -16,55 +16,53 @@ body {
   border-radius: 12px;
   padding: 20px;
   border: 1px solid #ccc;
-  width: 400px;
+  width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .form-group-container {
   display: flex;
-  gap: 10px;
+  justify-content: space-around;
 }
 
 .form-group {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  margin-bottom: 30px;
 }
 
 .form-group label {
-  font-size: 18px;
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
 .form-group input {
   padding: 10px;
   border-radius: 12px;
   border: 1px solid #333;
-  font-size: 1em;
-  width: 100%;
+  font-size: 1.3em;
+  width: 50px;
+  text-align: center;
 
 }
 
 .output {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 3em;
   text-align: center;
   font-weight: bold;
 }
 
 .generate-btn {
-  padding: 10px 20px;
+  padding: 10px;
   font-size: 16px;
   cursor: pointer;
   background-color: #007bff;
-  /* Blue button color */
   color: #fff;
-  /* White text color */
   border: none;
-  border-radius: 4px;
+  border-radius: 12px;
   transition: background-color 0.3s;
+  width: 100%;
 }
 
 .generate-btn:hover {
   background-color: #0056b3;
-  /* Darker blue hover color */
 }
