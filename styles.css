@@ -12,13 +12,14 @@ body {
 .container {
   background-color: #fff;
   border-radius: 12px;
-  padding: 30px;
+  padding: 20px;
   border: 1px solid #ccc;
-
+  width: 400px;
 }
 
-.generator {
-  text-align: center;
+.form-group-container {
+  display: flex;
+  gap: 10px;
 }
 
 .form-group {
@@ -32,9 +33,19 @@ body {
   font-size: 18px;
 }
 
+.form-group input {
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  font-size: 1em;
+  width: 100%;
+
+}
+
 .output {
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 3em;
+  text-align: center;
 }
 
 .generate-btn {
