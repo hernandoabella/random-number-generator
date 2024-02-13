@@ -21,5 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const randomNumber = Math.floor(Math.random() * (end - start + 1)) + start;
     output.textContent = randomNumber;
+
   }
 });
