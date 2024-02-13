@@ -1,17 +1,30 @@
-var sound = new Audio();
-sound.src = "https://www.codingcommanders.com/javascript/random-number-generator/chime.mp3";
+document.addEventListener('DOMContentLoaded', function() {
+  const output = document.getElementById('output');
+  const generateBtn = document.getElementById('generate-btn');
 
-function randNum(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+  // Generate a default random number when the page loads
+  generateRandomNumber();
 
-function generate () {
-  let min = document.getElementById('min_value').value;
-  let max = document.getElementById('max_value').value;
-  let rand = randNum(min,max);
-  document.getElementById("output").innerHTML = rand;
-}
+  generateBtn.addEventListener('click', function() {
+      generateRandomNumber();
+  });
 
-document.getElementById("myBut").addEventListener("click", generate);
+  function generateRandomNumber() {
+      const start = parseInt(document.getElementById('start').value);
+      const end = parseInt(document.getElementById('end').value);
+
+      if (isNaN(start) || isNaN(end) || start >= end) {
+          output.textContent = "Please enter valid start and end values.";
+          return;
+      }
+
+      const randomNumber = Math.floor(Math.random() * (end - start + 1)) + start;
+      output.textContent = randomNumber;
+
+      // Apply animation effect on generating a new number
+      output.classList.add('animated');
+      setTimeout(() => {
+          output.classList.remove('animated');
+      }, 1000);
+  }
+});
