@@ -22,5 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const randomNumber = Math.floor(Math.random() * (end - start + 1)) + start;
     output.textContent = randomNumber;
 
+    // Apply animation effect on generating a new number
+    output.classList.add('animated');
+    setTimeout(() => {
+      output.classList.remove('animated');
+    }, 500);
   }
 });
