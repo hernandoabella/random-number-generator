@@ -8,17 +8,16 @@
 </head>
 <body>
     <div class="container">
-        <div class="app">
-            <h1 class="title">Random Number Generator</h1>
+        <div class="generator">
             <div class="form-group">
                 <label for="start">Start:</label>
-                <input type="number" id="start" name="start" min="1" max="100" value="1">
+                <input type="number" id="start" name="start" min="0" value="0">
             </div>
             <div class="form-group">
                 <label for="end">End:</label>
-                <input type="number" id="end" name="end" min="1" max="100" value="100">
+                <input type="number" id="end" name="end" min="0" value="100">
             </div>
-            <div class="output" id="output">0</div>
+            <div class="output" id="output"></div>
             <button class="generate-btn" id="generate-btn">Generate Random Number</button>
         </div>
     </div>
